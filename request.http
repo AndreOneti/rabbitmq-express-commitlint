@@ -1,0 +1,7 @@
+POST /v1/rabbit HTTP/1.1
+Host: localhost:3000
+
+{
+  "username": "Roy Mustang",
+  "_id": "9ee3c4a0-df6b-a211-8db4-2eae9f965c0c"
+}

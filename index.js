@@ -9,7 +9,7 @@ const morgan = require("morgan");
 const helmet = require("helmet");
 const cors = require("cors");
 
-const ISDEVELOPMENT = process.env.NODE_ENV === "DEVELOPMENTE" || process.env.NODE_ENV === "developmente";
+const ISDEVELOPMENT = process.env.NODE_ENV !== "DEVELOPMENTE" || process.env.NODE_ENV !== "developmente";
 const PORT = process.env.PORT || 3000;
 const app = express();
 
