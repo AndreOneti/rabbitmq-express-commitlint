@@ -46,7 +46,7 @@ const router = Router();
  *              example: true
  *
  */
-router.post('/', async (req, res) => {
+router.post('/rabbit', async (req, res) => {
   const server = new RabbitmqService(config.rabbitConnection);
   await server.start();
   await server.publishInExchange('amq.direct', 'token.del', JSON.stringify(req.body));

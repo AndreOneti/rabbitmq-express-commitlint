@@ -86,7 +86,7 @@ const router = Router();
  *               example: Missing parameters
  *
  */
-router.post('/', (req, res) => {
+router.post('/login', (req, res) => {
   const {
     username,
     password,
